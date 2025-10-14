@@ -1,0 +1,266 @@
+*{
+ font-family: 'Poppins', sans-serif;
+ border: none;
+ margin: 0;
+ box-sizing: border-box;
+ padding: 0;
+
+}
+#First-page{
+    background-image: url('img/Picture1.png');
+    background-color:rgb(17,40,54);
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    background-position-x:center;
+    
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#First-page h1{
+    width: 100%;
+    font-size: 3rem;
+    color: white;
+    padding: 3px;
+    display: block;
+}
+#First-page p{
+    color: white;
+    font-size: 1rem;
+    padding: 3px;
+}
+#First-page button{
+    padding: 3px;
+    background-color: rgb(25, 108, 69);
+    width: 150px;
+    height: 8vh;
+    font-size: 1rem;
+    color: white;
+    margin-top: 50px;
+    border-radius: 3px;
+    transition: all 0.2s;
+}
+#First-page #btn-2{
+    background-color: rgba(4, 11, 38, 0.843);
+    border: 0.2px rgb(14, 116, 134) solid;
+}
+#First-page #btn-1:hover{
+    background-color:rgba(4, 11, 38, 0.843);
+    border: 0.2px rgb(14, 116, 134) solid;
+
+}
+#First-page #btn-2:hover{
+background-color: rgb(25, 108, 69);
+border: none;
+}
+/* Second page for digisning and I think that is same what hard */
+
+#Second-page{
+     background-color:rgb(17,40,54);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     position: relative;
+     
+}
+#div-main-second{
+    width: 90%;
+    min-height: 100vh;
+    position: relative;
+    padding-top: 20px;
+}
+#Second-page #h1-1{
+    width: 100%;
+    height: 8vh;
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    font-weight:700;
+    color: rgba(255, 255, 255, 0.827);
+    padding-bottom:80px;
+}
+#Second-page #div-h1{
+    width: 100%;
+    display: block;
+}
+
+#div-main-second-2{
+    width:100%;
+    display: flex;
+    flex-wrap:wrap;
+    position: relative;
+}
+#div-main-second-2-1{
+    width:400px;
+    display: block;
+    position: relative;
+
+}
+#div-main-second-2-1-img{
+    width: 350px;
+    height: 400px;
+}
+#div-main-second-2-1-p{
+    color: rgba(255, 255, 255, 0.765);
+    width:200px;
+    padding-top: 4px;
+}
+#div-main-second-2-2{
+    width:700px;
+    display: block;
+    position: relative;
+
+}
+#div-main-second-2-2-1{
+    width: 100%;
+    display: block;
+    color: rgba(255, 255, 255, 0.761);
+    padding-left:10%;
+}
+#div-main-second-2-2-1-p{
+    width: 100%;
+}
+#div-main-second-2-2-1-p-span{
+    color: rgba(62, 188, 114, 0.858);
+}
+#div-main-second-2-2-2{
+    width:100%;
+    color: rgba(255, 255, 255, 0.929);
+    padding-left:20%;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    position: relative;
+}
+#div-main-second-2-2-2::after{
+    content: "";
+    width: 3px;
+    height: 75px;
+    background-color: rgb(10, 105, 10);
+    position:absolute;
+    left:70px;
+    top: 30px;
+    display: block;
+}
+
+#div-main-second-2-2-3{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10%;
+
+}
+#div-main-second-2-2-3-1{
+   width:340px;
+    background-color:rgba(48,71,85);
+    padding: 10px;
+    padding-left: 15px;
+    color: rgba(255, 255, 255, 0.861);
+    border-right: 0.2px rgba(255, 255, 255, 0.798) solid;
+}
+#div-main-second-2-2-3-2{
+color: rgba(255, 255, 255, 0.846);
+width: 290px;
+    background-color:rgba(48,71,85);
+    padding-left: 20px;
+
+}
+#div-main-second-2-2-3-3{
+    width: 100%;
+    color: rgba(255, 255, 255, 0.884);
+    padding: 15px;
+    padding-top: 0;
+    border-top: 0.1px rgba(255, 255, 255, 0.558) solid;
+        background-color:rgba(48,71,85);
+
+}
+
+/* Tablet styles */
+@media (max-width: 900px) {
+    #First-page h1 {
+        font-size: 2.2rem;
+    }
+    #First-page button {
+        width: 120px;
+        height: 7vh;
+        font-size: 0.95rem;
+    }
+    #div-main-second-2 {
+        flex-direction: column;
+        align-items: center;
+    }
+    #div-main-second-2-1,
+    #div-main-second-2-2 {
+        width: 100%;
+        max-width: 600px;
+        margin-bottom: 20px;
+    }
+    #div-main-second-2-1-img {
+        width: 100%;
+        height: auto;
+        max-width: 350px;
+    }
+    #div-main-second-2-2-3 {
+        flex-direction: column;
+        margin-left: 0;
+    }
+    #div-main-second-2-2-3-1,
+    #div-main-second-2-2-3-2 {
+        width: 100%;
+        border-right: none;
+        margin-bottom: 10px;
+    }
+}
+
+/* Mobile styles */
+@media (max-width: 600px) {
+    #First-page {
+        padding: 20px;
+        flex-direction: column;
+        text-align: center;
+    }
+    #First-page h1 {
+        font-size: 1.4rem;
+        padding: 10px 0;
+    }
+    #First-page p {
+        font-size: 0.95rem;
+        padding: 10px 0;
+    }
+    #First-page button {
+        width: 100%;
+        height: 40px;
+        font-size: 0.9rem;
+        margin-top: 20px;
+    }
+    #div-main-second {
+        padding-top: 10px;
+    }
+    #Second-page #h1-1 {
+        font-size: 1.2rem;
+        padding-bottom: 30px;
+    }
+    #div-main-second-2-1-img {
+        width: 100%;
+        height: auto;
+        max-width: 250px;
+    }
+    #div-main-second-2-2-2 {
+        padding-left: 5%;
+        padding-top: 15px;
+        padding-bottom: 10px;
+    }
+    #div-main-second-2-2-2::after {
+        left: 20px;
+        top: 15px;
+        height: 40px;
+    }
+    #div-main-second-2-2-3-1,
+    #div-main-second-2-2-3-2,
+    #div-main-second-2-2-3-3 {
+        width: 100%;
+        padding: 10px;
+        font-size: 0.95rem;
+    }
+}
