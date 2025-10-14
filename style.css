@@ -32,7 +32,7 @@
     font-size: 1rem;
     padding: 3px;
 }
-#First-page button{
+#First-page button,.btn-1{
     padding: 3px;
     background-color: rgb(25, 108, 69);
     width: 150px;
@@ -47,7 +47,7 @@
     background-color: rgba(4, 11, 38, 0.843);
     border: 0.2px rgb(14, 116, 134) solid;
 }
-#First-page #btn-1:hover{
+#First-page #btn-1:hover,.btn-1:hover{
     background-color:rgba(4, 11, 38, 0.843);
     border: 0.2px rgb(14, 116, 134) solid;
 
@@ -176,11 +176,119 @@ width: 290px;
 
 }
 
-/* Tablet styles */
+#Tired-page{
+    width: 100%;
+    min-height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color:rgb(17,40,54);
+}
+#tired-main{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+}
+#tired-main-1{
+    width:100%;
+
+}
+#tired-main-1 h1{
+    color: rgba(255, 255, 255, 0.92);
+    padding-bottom: 30px;
+}
+#tired-main-1 p{
+    color: rgba(255, 255, 255, 0.739);
+
+}
+.tired-main-2{
+    width:430px;
+    position: relative;
+    margin-left: 100px;
+    color: rgba(255, 255, 255, 0.808);
+    
+}
+.tired-main-2 div{
+background-color:rgba(10,152,139);
+width: 100%;
+height: 2vh;
+margin-top: 20px;
+margin-bottom: 20px;
+border-radius: 8px;
+text-align: center;
+position: relative;
+}
+.tired-main-2 div div{
+    background-color:rgba(10,155,139);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    margin: auto;
+    position: relative;
+    top: -15px;
+    font-size: 1.5rem;
+    color: white;
+
+}
+.tired-main-2 span{
+    font-weight: 600;
+    color: white;
+}
+#Foure-pae{
+width: 100%;
+    min-height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color:rgb(17,40,54);
+}
+.foure-page{
+width: 340px;
+position: relative;
+margin: 20px;
+}
+.foure-page div{
+    width: 100%;
+    background-color: inherit;
+    text-align: start;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.foure-page div h2{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.five-page div img{
+    width: 30px;
+    height: 30px;
+    display: inline-blo;
+    position: relative;
+    top: 35px;
+    left: -40px;
+}
+#div-five{
+    background-color: rgb(5,72,66);
+    color: rgba(255, 255, 255, 0.721);
+}
+#div-five p span{
+    font-weight: 800;
+}
+
+/* Tablet styles also for disigning of the computer*/
+@media (max-width: 1200px) {
+.tired-main-2{
+        margin-left: 60px;
+        width: 350px;
+    }
+}
 @media (max-width: 900px) {
     #First-page h1 {
         font-size: 2.2rem;
     }
+    
     #First-page button {
         width: 120px;
         height: 7vh;
@@ -189,6 +297,11 @@ width: 290px;
     #div-main-second-2 {
         flex-direction: column;
         align-items: center;
+    }
+    .tired-main-2{
+        padding: 5px;
+        width:100%;
+        margin: 0;
     }
     #div-main-second-2-1,
     #div-main-second-2-2 {
@@ -213,6 +326,8 @@ width: 290px;
     }
 }
 
+
+
 /* Mobile styles */
 @media (max-width: 600px) {
     #First-page {
@@ -228,6 +343,16 @@ width: 290px;
         font-size: 0.95rem;
         padding: 10px 0;
     }
+    .five-page div img{
+    width: 40px;
+    height:40px;
+    display: inline-blo;
+    position: relative;
+    top:-20px;
+    left:0;
+    margin: auto;
+    text-align: center;
+}
     #First-page button {
         width: 100%;
         height: 40px;
