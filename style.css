@@ -276,14 +276,62 @@ margin: 20px;
 #div-five p span{
     font-weight: 800;
 }
+.six-page div{
+margin-bottom: 80px;
+}
+.six-page{
+    border: 0.1px solid rgba(255, 255, 255, 0.456);
+    border-left: 5px solid rgba(10,155,139);
+    padding: 10px;
+    padding-left: 10px;
+    border-radius: 8px;
+
+}
+.six-page h6{
+    padding-top: 14px;
+}
+.seven-1{
+    
+    border: none;
+}
+.seven-1 div img{
+    width: 230px;
+    height: 240px;
+    
+}
+.btn-seven{
+    position: relative;
+    top: 100px;
+    margin-bottom: 100px;
+}
+.seven-1{
+    position: relative;
+}
+#seven-2-1{
+width: 5px;
+height: 250px;
+background-color: rgba(69, 207, 69, 0.598);
+position: absolute;
+top: 0;
+left: 350px;
+}
+.seven-3{
+    width:100%;
+}
+.seven-1{
+    min-height: 40vh;
+}
+
 
 /* Tablet styles also for disigning of the computer*/
-@media (max-width: 1200px) {
+@media (max-width: 1200px){
 .tired-main-2{
         margin-left: 60px;
         width: 350px;
     }
-}
+#seven-2-1{
+display: none;
+}}
 @media (max-width: 900px) {
     #First-page h1 {
         font-size: 2.2rem;
@@ -328,12 +376,16 @@ margin: 20px;
 
 
 
+
 /* Mobile styles */
 @media (max-width: 600px) {
     #First-page {
         padding: 20px;
         flex-direction: column;
         text-align: center;
+    }
+    .six-pages{
+        padding-top: 100px;
     }
     #First-page h1 {
         font-size: 1.4rem;
