@@ -322,6 +322,12 @@ left: 350px;
     min-height: 40vh;
 }
 
+#Login-page{
+         background-color:rgb(17,40,54);
+         min-height: 100vh;
+
+}
+
 
 /* Tablet styles also for disigning of the computer*/
 @media (max-width: 1200px){

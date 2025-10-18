@@ -254,7 +254,61 @@
 
 </section>
 
+<!-- New: Login section appended at the end of the page -->
+<section id="Login-page" aria-labelledby="login-title" style="padding:40px 20px;">
+  <div style="border: 0.2px solid white; padding: 3px;
+border-radius: 10px; max-width:480px; margin:0 auto;">
+    <h2 id="login-title">Login</h2>
+    <p>Sign in to access your dashboard and portfolio settings.</p>
 
+    <form id="login-form" novalidate>
+      <label for="login-email">Email</label>
+      <input id="login-email" name="email" type="email" placeholder="you@example.com" required style="width:100%;padding:8px;margin:6px 0 12px;">
+
+      <label for="login-password">Password</label>
+      <input id="login-password" name="password" type="password" placeholder="••••••••" required style="width:90%;padding:8px;margin:6px 0 12px;">
+
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px;">
+        <input id="login-remember" name="remember" type="checkbox">
+        <label for="login-remember" style="margin:0;">Remember me</label>
+      </div>
+
+      <div style="display:flex;gap:10px;">
+        <button type="submit" class="btn-1" style="flex:1;">Sign in</button>
+        <button type="button" id="login-cancel" style="flex:1;border:1px solid #ccc;background:#fff;">Cancel</button>
+      </div>
+
+      <p style="margin-top:12px;font-size:0.9rem;">
+        <a href="#" id="forgot-link">Forgot password?</a> · <a href="#" id="signup-link">Create an account</a>
+      </p>
+    </form>
+  </div>
+</section>
+
+<script>
+  // Basic client-side handling for the new login form
+  (function(){
+    const form = document.getElementById('login-form');
+    const email = document.getElementById('login-email');
+    const pass = document.getElementById('login-password');
+    const cancel = document.getElementById('login-cancel');
+
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      if (!email.value.trim() || !pass.value.trim()) {
+        alert('Please enter both email and password.');
+        return;
+      }
+      // Placeholder behaviour: replace with real auth logic
+      alert('Signed in as: ' + email.value.trim());
+      form.reset();
+    });
+
+    cancel.addEventListener('click', function(){
+      form.reset();
+    });
+  })();
+</script>
 
     <script src="app.js"></script>
 </body>
