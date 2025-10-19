@@ -254,19 +254,30 @@
 
 </section>
 
-<!-- New: Login section appended at the end of the page -->
 <section id="Login-page" aria-labelledby="login-title" style="padding:40px 20px;">
   <div style="border: 0.2px solid white; padding: 3px;
 border-radius: 10px; max-width:480px; margin:0 auto;">
+    <datalist id="email-suggestions">
+      <option value="you@example.com">
+      <option value="name@company.com">
+      <option value="me@gmail.com">
+      <option value="hello@portfolio.com">
+    </datalist>
+    <datalist id="password-suggestions">
+        <option value="1234Afghan"></option>
+        <option value="Omiar"></option>
+        <option value="Name9393"></option>
+    </datalist>
     <h2 id="login-title">Login</h2>
     <p>Sign in to access your dashboard and portfolio settings.</p>
 
     <form id="login-form" novalidate>
+    
       <label for="login-email">Email</label>
-      <input id="login-email" name="email" type="email" placeholder="you@example.com" required style="width:100%;padding:8px;margin:6px 0 12px;">
+      <input id="login-email" name="email" type="email" placeholder="you@example.com" required style="width:100%;padding:8px;margin:6px 0 12px;" list="email-suggestions" autocomplete="email">
 
       <label for="login-password">Password</label>
-      <input id="login-password" name="password" type="password" placeholder="••••••••" required style="width:90%;padding:8px;margin:6px 0 12px;">
+      <input id="login-password" name="password" type="password" placeholder="••••••••" required style="width:90%;padding:8px;margin:6px 0 12px;" list="password-suggestions" autocomplete="password">
 
       <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px;">
         <input id="login-remember" name="remember" type="checkbox">
